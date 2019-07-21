@@ -1,0 +1,35 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: url(../img/wbg.png);
+}
+.box{
+	width: 800px;
+	height: 360px;
+	margin: 200px auto;
+	/*溢出部分隐藏*/
+	overflow: hidden;
+}
+.box img{
+	width: 640px;
+	height: 360px;
+}
+li{
+	list-style: none;
+	width: 155px;
+	height: 360px;
+	float: left;
+	border-left: 5px solid white;
+	box-shadow: -5px 0px 10px black;
+	transition: all 0.5s linear;
+}
+/*鼠标悬浮在ul上，让ul变小*/
+.box ul:hover li{
+	width: 35px;
+}
+/*鼠标悬浮到某个li上，让li变大*/
+.box ul li:hover{
+	width: 635px;
+}

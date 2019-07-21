@@ -1,0 +1,95 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.box {
+	width: 100%;
+	height: 100%;
+}
+
+.box img {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	transition: all 1s linear;
+}
+
+.list {
+	position: absolute;
+	z-index: 999;
+	width: 1000px;
+	height: auto;
+	bottom: 20px;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+.list li {
+	list-style: none;
+	width: 130px;
+	height: 130px;
+	border: 5px solid lightskyblue;
+	float: left;
+	margin-left: 60px;
+	overflow: hidden;
+	border-radius: 50%;
+
+}
+
+.list li img {
+	width: 200%;
+}
+
+.box img:nth-child(1) {
+	opacity: 0;
+	left: -100%;
+}
+
+.box img:nth-child(1):target {
+	z-index: 1;
+	opacity: 1;
+	left: 0;
+}
+
+.box img:nth-child(2) {
+	top: -100%;
+}
+
+.box img:nth-child(2):target {
+	z-index: 1;
+	transform: rotate(360deg);
+	top: 0;
+}
+
+.box img:nth-child(3) {
+	opacity: 0;
+	right: -100%;
+}
+
+.box img:nth-child(3):target {
+	z-index: 1;
+	opacity: 1;
+	right: 0;
+}
+
+.box img:nth-child(4) {
+	bottom: -100%;
+}
+
+.box img:nth-child(4):target {
+	z-index: 1;
+	transform: rotate(360deg);
+	bottom: 0;
+}
+
+.box img:nth-child(5) {
+	opacity: 0;
+}
+
+.box img:nth-child(5):target {
+	z-index: 1;
+	opacity: 1;
+	transform: rotate(360deg);
+}

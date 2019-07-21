@@ -1,0 +1,48 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #333;
+}
+
+li {
+	list-style: none;
+}
+
+h1 {
+	text-align: center;
+	height: 50px;
+	line-height: 50px;
+	color: #FFFFFF;
+}
+.box{
+	width: 660px;
+	height: 320px;
+	margin: 200px auto;
+	border: 5px solid white;
+	box-shadow: 0px 0px 10px black;
+}
+.list1,.list2{
+	float: left;
+}
+.list1{
+	width: 480px;
+	height: 270px;
+	overflow: hidden;
+}
+.list2{
+	width: 180px;
+	height: 270px;
+	overflow: scroll;
+}
+.list1 img{
+	width: 480px;
+	height: 270px;
+}
+.list2 img{
+	width: 160px;
+	height: 90px;
+}
+

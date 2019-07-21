@@ -1,0 +1,94 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #333;
+}
+
+ul {
+	width: 300px;
+	height: 300px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	/*3d空间*/
+	transform-style: preserve-3d;
+	animation: box 20s linear infinite;
+}
+
+@keyframes box {
+
+	/*3d旋转 x y z deg*/
+	from {
+		transform: rotate3d(0, 0, 0, 0deg);
+	}
+
+	to {
+		transform: rotate3d(1, 1, 1, 360deg);
+	}
+}
+
+li {
+	width: 300px;
+	height: 300px;
+	list-style: none;
+	border: 1px solid black;
+	position: absolute;
+	opacity: 0.8;
+	box-shadow: 0px 0px 10px white;
+}
+
+li:nth-child(1) {
+	background: url(../img/danji.jpg);
+	background-position: center;
+	background-size: cover;
+	transform: translateZ(150px);
+}
+
+/*后*/
+li:nth-child(2) {
+	background: url(../img/donghuang.jpg);
+	background-position: center;
+	background-size: cover;
+	transform: translateZ(-150px);
+}
+
+/*左*/
+li:nth-child(3) {
+	background: url(../img/luban.jpg);
+	background-position: center;
+	background-size: cover;
+	transform: rotateY(90deg) translateZ(-150px);
+}
+
+/*右*/
+li:nth-child(4) {
+	background: url(../img/libai.jpg);
+	background-position: center;
+	background-size: cover;
+	transform: rotateY(90deg) translateZ(150px);
+}
+
+/*上*/
+li:nth-child(5) {
+	background: url(../img/kai.jpg);
+	background-position: center;
+	background-size: cover;
+	transform: rotateX(90deg) translateZ(150px);
+}
+
+li:nth-child(6) {
+	background: url(../img/sunwukong.jpg);
+	background-position: center;
+	background-size: cover;
+	transform: rotateX(90deg) translateZ(-150px);
+}
+
+ul:hover {
+	animation-play-state: paused;
+}
