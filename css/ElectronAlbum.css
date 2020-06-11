@@ -18,7 +18,7 @@ h1 {
 	color: #FFFFFF;
 }
 .box{
-	width: 660px;
+	width: 645px;
 	height: 320px;
 	margin: 200px auto;
 	border: 5px solid white;
@@ -33,9 +33,10 @@ h1 {
 	overflow: hidden;
 }
 .list2{
-	width: 180px;
+	width: 165px;
 	height: 270px;
-	overflow: scroll;
+  overflow: scroll;
+  overflow-x: hidden;
 }
 .list1 img{
 	width: 480px;
@@ -46,3 +47,18 @@ h1 {
 	height: 90px;
 }
 
+/*美化滚动条*/
+.list2::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+.list2::-webkit-scrollbar-track {
+  background: rgba(144,147,153,.3);
+  border-radius: 5px;
+}
+
+.list2::-webkit-scrollbar-thumb {
+  background: rgba(144,147,153,.3);
+  border-radius: 5px;
+}

@@ -4,16 +4,23 @@
 }
 body{
 	background: url(../img/bg.jpg);
-	background-size: cover;
+  background-size: cover;
+  min-width: 1200px;
+  min-height: 700px;
 }
+.main{
+  width: 1200px;
+  height: 700px;
+  margin: auto;
+  position: relative;
+}
+
 img{
 	position: absolute;
-	left: 0;
-	right: 0;
-	top: 0;
-	bottom: 0;
-	width: 400px;
-	margin:auto;
+  width: 400px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
 }
 a{
 	position: absolute;
@@ -37,10 +44,10 @@ a{
 	}
 }
 a:nth-child(even){
-	left: 20%;
+	left: 15%;
 }
 a:nth-child(odd){
-	right: 20%;
+	right: 15%;
 }
 a:nth-child(2),a:nth-child(5){
 	top: 30%;
